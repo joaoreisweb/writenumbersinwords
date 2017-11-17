@@ -23,6 +23,8 @@ var numDezenasArrEN = new Array("ten","twenty","thirty","fourty","fifty","sixty"
 var numCentenasArrEN = new Array("one hundred","two hundred","three hundred","four hundred","five hundred","six hundred","seven hundred","eight hundred","nine hundred","one hundred");
 var numMilharesCurtaArrEN = new Array("","thousand","million","billion","trillion","quadrillion","quintillion","sextillion","septillion","octillion","nonillion","decillion","undecillion","duodecillion","tredecillion","quattuordecillion","quindecillion","sexdecillion","septendecillion","octodecillion","novemdecillion","vigintillion","unvigintillion","duovigintillion","trevigintillion","quattuorvigintillion","quinvigintillion","sexvigintillion","septenvigintillion","octovigintillion","novemvigintillion","trigintillion");
 var numMilharesLongaArrEN = new Array("","thousand","million","thousand million","billion","thousand billion","trillion","thousand trillion","quadrillion","thousand quadrillion","quintillion","thousand quintillion","sextillion","thousand sextillion","septillion","thousand septillion","octillion","thousand octillion","nonillion","thousand nonillion","decillion","thousand decillion","undecillion","thousand undecillion","duodecillion","thousand duodecillion","tredecillion","thousand tredecillion","quattuordecillion","thousand quattuordecillion","quindecillion","thousand quindecillion","sexdecillion","thousand sexdecillion","septendecillion","thousand septendecillion","octodecillion","thousand octodecillion","novemdecillion","thousand novemdecillion","vigintillion","thousand vigintillion");
+var tipoNum = [{id:"EUR",leftSingular:"euro",leftPlural:"euros",rightSingular:"cêntimo", rightPlural:"cêntimos"},
+				{id:"USD",leftSingular:"dollar",leftPlural:"dollars",rightSingular:"cent", rightPlural:"cents"}];
 
 var valornumerico;
 var lang;
@@ -241,7 +243,7 @@ function numerosPorExtenso(valornumerico, langSigla) {
 
 		}
 		
-		function eurosPorExtenso(valornumerico, langSigla) {
+		function eurosPorExtenso(valornumerico, langSigla="", coin="") {
 			lang = langSigla;
 			resultadoExtenso = "";
 			centavosExtenso = "";
@@ -250,13 +252,22 @@ function numerosPorExtenso(valornumerico, langSigla) {
 			resultadoExtenso=extensoNumeros;
 			nomeMoeda="";
 			separadorDecimal="";
+
+			var tiposelected=[];
+
+			for(var i in tipoNum){
+				if(tipoNum[i].id==coin){
+					tiposelected = tipoNum[i];
+				}
+			}
 			//definir plural da moeda
 			if (e==0) {
 				nomeMoeda = "";
 			}else if (e==1) {
-				nomeMoeda = "euro";
+				nomeMoeda = (typeof tiposelected['leftSingular'] !== 'undefined')?tiposelected['leftSingular']:"";
+
 			} else {
-				nomeMoeda = "euros";
+				nomeMoeda = (typeof tiposelected['leftPlural'] !== 'undefined')?tiposelected['leftPlural']:"";
 			}
 			
 			
@@ -264,18 +275,11 @@ function numerosPorExtenso(valornumerico, langSigla) {
 				
 				var n=Number(nSc);
 
-				if (lang=="PT" || lang=="BR") {
+				if (coin!="") {
 					if (unidezcemCentavos==01) {
-						textCentimos = " cêntimo";
+						textCentimos = (typeof tiposelected['rightSingular'] !== 'undefined')?" "+tiposelected['rightSingular']:"";
 					} else {
-						textCentimos = " cêntimos";
-					}
-				}
-				if (lang=="UK" || lang=="US") {
-					if (unidezcemCentavos==01) {
-						textCentimos = " cent";
-					} else {
-						textCentimos = " cents";
+						textCentimos = (typeof tiposelected['rightPlural'] !== 'undefined')?" "+tiposelected['rightPlural']:"";
 					}
 				}
 
