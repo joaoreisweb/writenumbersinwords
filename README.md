@@ -26,4 +26,7 @@ Pequeno script para escrever números por extenso
 *fonte wikipédia* [wiki/Long_and_short_scales](https://en.wikipedia.org/wiki/Long_and_short_scales)
 
 
-| mil | milmilhão | milhãobilião | mil milhõestrilião | biliãoquatrilhão | mil biliõesquintilião | triliãosextilião | mil triliõesseptilião | quatriliãooctilião | mil quatriliõesnonilião | quintiliãodecilião | mil quintiliõesundecilião | sextiliãoduodecilião | mil sextiliõestredecilião | septiliãoquatridecilião | mil septiliõesquindecilião | octiliãosexdecilião | mil octiliõesseptendecilião | noniliãooctodecilião | mil noniliõesnovendecilião | deciliãovigintilião | mil deciliõesunvigintilião | undeciliãoduovigintilião | mil undeciliõestrivigintilião | duodeciliãoquatrivigintilião | mil duodeciliõesquinquavigintilião | tredecilião
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
