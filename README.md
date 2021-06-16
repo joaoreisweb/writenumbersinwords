@@ -26,7 +26,31 @@ Pequeno script para escrever números por extenso
 *fonte wikipédia* [wiki/Long_and_short_scales](https://en.wikipedia.org/wiki/Long_and_short_scales)
 
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| BR US - Escala Curta | PT UK - Escala Longa |   | BR US - Short Scale  | PT UK - Long Scale    |
+|----------------------|----------------------|---|----------------------|-----------------------|
+| mil                  | mil                  |   | thousand             | thousand              |
+| milhão               | milhão               |   | million              | million               |
+| bilião               | mil milhões          |   | billion              | thousand million      |
+| trilião              | bilião               |   | trillion             | billion               |
+| quatrilhão           | mil biliões          |   | quadrillion          | thousand billion      |
+| quintilião           | trilião              |   | quintillion          | trillion              |
+| sextilião            | mil triliões         |   | sextillion           | thousand trillion     |
+| septilião            | quatrilião           |   | septillion           | quadrillion           |
+| octilião             | mil quatriliões      |   | octillion            | thousand quadrillion  |
+| nonilião             | quintilião           |   | nonillion            | quintillion           |
+| decilião             | mil quintiliões      |   | decillion            | thousand quintillion  |
+| undecilião           | sextilião            |   | undecillion          | sextillion            |
+| duodecilião          | mil sextiliões       |   | duodecillion         | thousand sextillion   |
+| tredecilião          | septilião            |   | tredecillion         | septillion            |
+| quatridecilião       | mil septiliões       |   | quattuordecillion    | thousand septillion   |
+| quindecilião         | octilião             |   | quindecillion        | octillion             |
+| sexdecilião          | mil octiliões        |   | sexdecillion         | thousand octillion    |
+| septendecilião       | nonilião             |   | septendecillion      | nonillion             |
+| octodecilião         | mil noniliões        |   | octodecillion        | thousand nonillion    |
+| novendecilião        | decilião             |   | novemdecillion       | decillion             |
+| vigintilião          | mil deciliões        |   | vigintillion         | thousand decillion    |
+| unvigintilião        | undecilião           |   | unvigintillion       | undecillion           |
+| duovigintilião       | mil undeciliões      |   | duovigintillion      | thousand undecillion  |
+| trivigintilião       | duodecilião          |   | trevigintillion      | duodecillion          |
+| quatrivigintilião    | mil duodeciliões     |   | quattuorvigintillion | thousand duodecillion |
+| quinquavigintilião   | tredecilião          |   | quinvigintillion     | tredecillion          |
