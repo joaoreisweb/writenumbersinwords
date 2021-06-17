@@ -3,6 +3,7 @@ Script to write numbers in words
 
 Pequeno script para escrever números por extenso
 
+Última versão https://github.com/joaoreisweb/jquery-numbersinwords
 
 > **Short scale**
 > Every new term greater than million is one thousand times larger than the previous term. 
